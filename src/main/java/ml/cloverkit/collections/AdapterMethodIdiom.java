@@ -11,25 +11,25 @@ class ReversibleArrayList<E> extends ArrayList<E> {
         super(c);
     }
 
-    public Iterable<E> reversed() {
-        return new Iterable<E>() {
-            @Override
-            public Iterator<E> iterator() {
-                return new Iterator<E>() {
-                    int current = size() - 1;
-                    @Override
-                    public boolean hasNext() {
-                        return current > -1;
-                    }
+    // public Iterable<E> reversed() {
+    //     return new Iterable<E>() {
+    //         @Override
+    //         public Iterator<E> iterator() {
+    //             return new Iterator<E>() {
+    //                 int current = size() - 1;
+    //                 @Override
+    //                 public boolean hasNext() {
+    //                     return current > -1;
+    //                 }
 
-                    @Override
-                    public E next() {
-                        return get(current--);
-                    }
-                };
-            }
-        };
-    }
+    //                 @Override
+    //                 public E next() {
+    //                     return get(current--);
+    //                 }
+    //             };
+    //         }
+    //     };
+    // }
 }
 public class AdapterMethodIdiom {
     public static void main(String[] args) {

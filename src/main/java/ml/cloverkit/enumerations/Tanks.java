@@ -16,9 +16,9 @@ record Tank(Type type, Level level) {}
 public class Tanks {
      static String check(Tank tank) {
          return switch(tank) {
-             case Tank t && (t.type() == Type.TOXIC && t.level().percent() < 50) -> "Toxic, low: " + t;
-             case Tank t && t.type() == Type.TOXIC -> "Toxic: " + t;
-             case Tank t && t.type() == Type.FLAMMABLE -> "Flammable: " + t;
+             // case Tank t && (t.type() == Type.TOXIC && t.level().percent() < 50) -> "Toxic, low: " + t;
+             // case Tank t && t.type() == Type.TOXIC -> "Toxic: " + t;
+             // case Tank t && t.type() == Type.FLAMMABLE -> "Flammable: " + t;
              // 相当于 default:
              case Tank t -> "Other Thank: " + t;
          };

@@ -7,9 +7,9 @@ record Person(String name, int age) {}
 public class People {
     static String categorize(Person person) {
         return switch (person) {
-            case Person p && p.age() > 40 -> p + " is middle aged";
-            case Person p && (p.name().contains("D") || p.age() == 14) -> p + "D or 14";
-            case Person p && !(p.age() >= 100) -> p + " is not a centenarian";
+            // case Person p && p.age() > 40 -> p + " is middle aged";
+            // case Person p && (p.name().contains("D") || p.age() == 14) -> p + "D or 14";
+            // case Person p && !(p.age() >= 100) -> p + " is not a centenarian";
             case Person p -> p + " Everyone else";
         };
     }

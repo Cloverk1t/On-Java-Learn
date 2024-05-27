@@ -23,12 +23,12 @@ record Rectangle(double side1, double side2) implements Shape {
 
 public class Shapes {
     static void classify(Shape s) {
-        System.out.println(switch (s) {
-            case Circle c && c.area() < 100.0 -> "Small Circle: " + c;
-            case Circle c -> "Large Circle: " + c;
-            case Rectangle r && r.side1() == r.side2() -> "Square: " + r;
-            case Rectangle r -> "Rectangle: " + r;
-        });
+        // System.out.println(switch (s) {
+        //     case Circle c && c.area() < 100.0 -> "Small Circle: " + c;
+        //     case Circle c -> "Large Circle: " + c;
+        //     case Rectangle r && r.side1() == r.side2() -> "Square: " + r;
+        //     case Rectangle r -> "Rectangle: " + r;
+        // });
     }
 
     public static void main(String[] args) {

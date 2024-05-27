@@ -43,7 +43,7 @@ public class CaseNull {
 
     static void combineNullAndCase(String s) {
         switch (s) {
-            case "XX", null -> System.out.println("XX|null");
+            // case "XX", null -> System.out.println("XX|null");
             default         -> System.out.println("default");
         }
     }

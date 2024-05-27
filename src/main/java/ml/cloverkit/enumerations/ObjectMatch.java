@@ -12,7 +12,7 @@ public class ObjectMatch {
             case Pet sp -> "Not dog or fish";
             case String s -> "String " + s;
             case Integer i -> "Integer " + i;
-            case null, XX xx -> "null or XX: " + xx;
+            // case null, XX xx -> "null or XX: " + xx;
             default -> "Something else";
         };
     }
