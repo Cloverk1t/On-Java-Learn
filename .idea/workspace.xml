@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7893a3-c3f7-435a-b46f-00ebeae0ee00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/DiningPhilosophers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/Philosopher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/StickHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/HasID.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/IDChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/StaticIDField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/TestStaticIDField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/GuardedIDField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/SharedConstructorArgument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/SynchronizedConstructor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/SynchronizedFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +70,13 @@
   "keyToString": {
     "Application.CatchCompletableExceptions.executor": "Run",
     "Application.DiningPhilosophers.executor": "Run",
+    "Application.GuardedIDField.executor": "Run",
     "Application.ObjectMatch.executor": "Run",
     "Application.People.executor": "Run",
+    "Application.SharedConstructorArgument.executor": "Run",
+    "Application.SynchronizedConstructor.executor": "Run",
+    "Application.SynchronizedFactory.executor": "Run",
+    "Application.TestStaticIDField.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -105,13 +116,13 @@
       <recent name="ml.cloverkit.collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DiningPhilosophers">
-    <configuration name="CatchCompletableExceptions" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.CatchCompletableExceptions" />
+  <component name="RunManager" selected="Application.SynchronizedFactory">
+    <configuration name="GuardedIDField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.GuardedIDField" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.*" />
+          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiningPhilosophers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.DiningPhilosophers" />
+    <configuration name="SharedConstructorArgument" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.SharedConstructorArgument" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.*" />
+          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,12 +143,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="People" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.enumerations.People" />
+    <configuration name="SynchronizedConstructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.SynchronizedConstructor" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.enumerations.*" />
+          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizedFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.SynchronizedFactory" />
+      <module name="OnJava8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticIDField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.TestStaticIDField" />
+      <module name="OnJava8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,9 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DiningPhilosophers" />
-        <item itemvalue="Application.CatchCompletableExceptions" />
-        <item itemvalue="Application.People" />
+        <item itemvalue="Application.SynchronizedFactory" />
+        <item itemvalue="Application.SynchronizedConstructor" />
+        <item itemvalue="Application.SharedConstructorArgument" />
+        <item itemvalue="Application.GuardedIDField" />
+        <item itemvalue="Application.TestStaticIDField" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +317,9 @@
       <workItem from="1716816918997" duration="670000" />
       <workItem from="1716817639325" duration="191000" />
       <workItem from="1716817836364" duration="384000" />
-      <workItem from="1716901388689" duration="2918000" />
+      <workItem from="1716901388689" duration="3086000" />
+      <workItem from="1716987675069" duration="2456000" />
+      <workItem from="1716990205410" duration="642000" />
     </task>
     <servers />
   </component>
