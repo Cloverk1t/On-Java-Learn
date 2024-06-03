@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7893a3-c3f7-435a-b46f-00ebeae0ee00" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/HasID.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/IDChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/StaticIDField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/TestStaticIDField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/GuardedIDField.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/SharedConstructorArgument.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/SynchronizedConstructor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/atomic/SynchronizedFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/CompletablePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/OnePizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/Pizza.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/PizzaParallelSteps.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/concurrent/PizzaStreams.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/lowlevel/NumberOfProcessors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ml/cloverkit/lowlevel/WorkStealingPool.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,10 +67,15 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.CatchCompletableExceptions.executor": "Run",
+    "Application.CompletablePizza.executor": "Run",
     "Application.DiningPhilosophers.executor": "Run",
     "Application.GuardedIDField.executor": "Run",
+    "Application.NumberOfProcessors.executor": "Run",
     "Application.ObjectMatch.executor": "Run",
+    "Application.OnePizza.executor": "Run",
     "Application.People.executor": "Run",
+    "Application.PizzaParallelSteps.executor": "Run",
+    "Application.PizzaStreams.executor": "Run",
     "Application.SharedConstructorArgument.executor": "Run",
     "Application.SynchronizedConstructor.executor": "Run",
     "Application.SynchronizedFactory.executor": "Run",
@@ -116,13 +119,13 @@
       <recent name="ml.cloverkit.collections" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SynchronizedFactory">
-    <configuration name="GuardedIDField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.GuardedIDField" />
+  <component name="RunManager" selected="Application.WorkStealingPool">
+    <configuration name="CompletablePizza" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.CompletablePizza" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="PATTERN" value="ml.cloverkit.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,12 +133,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SharedConstructorArgument" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.SharedConstructorArgument" />
+    <configuration name="NumberOfProcessors" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.lowlevel.NumberOfProcessors" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="PATTERN" value="ml.cloverkit.lowlevel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,12 +146,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedConstructor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.SynchronizedConstructor" />
+    <configuration name="PizzaParallelSteps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.PizzaParallelSteps" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="PATTERN" value="ml.cloverkit.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -156,12 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SynchronizedFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.atomic.SynchronizedFactory" />
+    <configuration name="PizzaStreams" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.PizzaStreams" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="PATTERN" value="ml.cloverkit.concurrent.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -169,12 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestStaticIDField" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.concurrent.TestStaticIDField" />
+    <configuration name="WorkStealingPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ml.cloverkit.lowlevel.WorkStealingPool" />
       <module name="OnJava8" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ml.cloverkit.concurrent.atomic.*" />
+          <option name="PATTERN" value="ml.cloverkit.lowlevel.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.SynchronizedFactory" />
-        <item itemvalue="Application.SynchronizedConstructor" />
-        <item itemvalue="Application.SharedConstructorArgument" />
-        <item itemvalue="Application.GuardedIDField" />
-        <item itemvalue="Application.TestStaticIDField" />
+        <item itemvalue="Application.WorkStealingPool" />
+        <item itemvalue="Application.NumberOfProcessors" />
+        <item itemvalue="Application.CompletablePizza" />
+        <item itemvalue="Application.PizzaParallelSteps" />
+        <item itemvalue="Application.PizzaStreams" />
       </list>
     </recent_temporary>
   </component>
@@ -319,7 +322,8 @@
       <workItem from="1716817836364" duration="384000" />
       <workItem from="1716901388689" duration="3086000" />
       <workItem from="1716987675069" duration="2456000" />
-      <workItem from="1716990205410" duration="642000" />
+      <workItem from="1716990205410" duration="759000" />
+      <workItem from="1717420233980" duration="2371000" />
     </task>
     <servers />
   </component>
